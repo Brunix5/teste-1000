@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR com GLB</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <!-- A-Frame Scene -->
+    <a-scene embedded arjs>
+      <!-- Carrega o modelo GLB do Google Drive -->
+      <a-entity 
+        gltf-model="url(https://drive.google.com/uc?export=download&id=https://drive.google.com/file/d/1sLvgY_K8zHEZAPP515-8lHoIQYHgpe33/view?usp=sharing)" 
+        scale="0.5 0.5 0.5" 
+        position="0 0 0">
+      </a-entity>
+      
+      <!-- Configura a câmera AR -->
+      <a-marker-camera preset="hiro"></a-marker-camera>
+    </a-scene>
+  </body>
+</html>
